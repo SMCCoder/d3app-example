@@ -4,7 +4,7 @@
 
 requirejs.config({
     baseUrl:'',
-    path: {
+    paths: {
         backbone: 'lib/backbone/backbone-min',
         bootstrap: 'lib/bootstrap/js/bootstrap.min',
         d3: 'lib/d3/d3.min',
@@ -18,7 +18,15 @@ requirejs.config({
 requirejs([ 
     'jquery', 
     'd3',
-],function($, d3, Network, Cluster) {
-        
+    'js/data',
+    'js/models/network',
+    'js/views/network',
+], function($, d3, graph, NetworkModel, NetworkView) {
+    
+    var network_model = new NetworkModel(graph);
+    
+    var network_view = new NetworkView({ model: network_model });
+    
+    network_view.draw();
     
 });

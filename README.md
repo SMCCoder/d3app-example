@@ -1,21 +1,5 @@
-# Boilerplate code for a D3 application
+# Example D3 application using d3app boilerplate code
 
-Clone this repository to quickly begin building a web application with D3 visualizations. 
+The origin repo can be found [here](https://github.com/Zsailer/d3app). You can clone that repository and begin building a d3 application with backbone architecture immediately.
 
-It contains all the boilerplate code for an application using:
-
-1. Backbone.js and Underscore.js as an MVC framework
-2. Require.js for module loading
-3. and JQuery for widgets HTML/JS interaction/glue-code. 
-
-## To begin ... 
-
-Clone this repository
-```
-git clone https://github.com/Zsailer/d3app
-```
-then download the submodules.
-```
-git submodule init
-git submodule update
-```
+This repository offers an demonstration of how to build such an application -- using the D3 example [here](http://bl.ocks.org/mbostock/4062045) made by [Mike Bostock](https://github.com/mbostock), the founder of D3. 
